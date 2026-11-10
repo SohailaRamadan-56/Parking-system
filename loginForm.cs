@@ -30,7 +30,7 @@ namespace Parking_System
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text != "" && txtPassword.Text !="" )
+            if (!string.IsNullOrWhiteSpace(txtUserName.Text)&& !string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 mainForm main = new mainForm();
                 DialogResult = DialogResult.OK; 
