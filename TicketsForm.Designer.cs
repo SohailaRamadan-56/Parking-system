@@ -57,7 +57,7 @@
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Delete ticket";
             btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += this.btnGenerate_Click;
+            btnDelete.Click += btnGenerate_Click;
             // 
             // dtpTo
             // 
@@ -65,7 +65,7 @@
             dtpTo.Name = "dtpTo";
             dtpTo.Size = new Size(161, 27);
             dtpTo.TabIndex = 13;
-            dtpTo.ValueChanged += this.dtpTo_ValueChanged;
+            dtpTo.ValueChanged += dtpTo_ValueChanged;
             // 
             // dtpFrom
             // 
@@ -73,7 +73,7 @@
             dtpFrom.Name = "dtpFrom";
             dtpFrom.Size = new Size(159, 27);
             dtpFrom.TabIndex = 12;
-            dtpFrom.ValueChanged += this.dtpFrom_ValueChanged;
+            dtpFrom.ValueChanged += dtpFrom_ValueChanged;
             // 
             // lblTo
             // 
@@ -83,7 +83,7 @@
             lblTo.Size = new Size(25, 20);
             lblTo.TabIndex = 11;
             lblTo.Text = "To";
-            lblTo.Click += this.lblTo_Click;
+            lblTo.Click += lblTo_Click;
             // 
             // lblFrom
             // 
@@ -93,7 +93,6 @@
             lblFrom.Size = new Size(43, 20);
             lblFrom.TabIndex = 10;
             lblFrom.Text = "From";
-            
             // 
             // cmdStatus
             // 

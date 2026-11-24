@@ -9,10 +9,8 @@ internal static class Program
     {
         ApplicationConfiguration.Initialize();
 
-        LoginForm login = new LoginForm();
-        if (login.ShowDialog() == DialogResult.OK)
-        {
-            Application.Run(new mainForm());
-        }
+        DataStore.LoadData();
+
+        Application.Run(new LoginForm());
     }
 }

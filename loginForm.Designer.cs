@@ -44,7 +44,7 @@
             // 
             lblUserName.AutoSize = true;
             lblUserName.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUserName.Location = new Point(200, 187);
+            lblUserName.Location = new Point(244, 171);
             lblUserName.Name = "lblUserName";
             lblUserName.Size = new Size(90, 23);
             lblUserName.TabIndex = 0;
@@ -54,7 +54,8 @@
             // 
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPassword.Location = new Point(200, 231);
+            lblPassword.ForeColor = SystemColors.ControlText;
+            lblPassword.Location = new Point(244, 215);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(82, 23);
             lblPassword.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(296, 231);
+            txtPassword.Location = new Point(340, 215);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(172, 27);
             txtPassword.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(296, 187);
+            txtUserName.Location = new Point(340, 171);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(172, 27);
             txtUserName.TabIndex = 3;
@@ -79,7 +80,7 @@
             // btnlogin
             // 
             btnlogin.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnlogin.Location = new Point(200, 316);
+            btnlogin.Location = new Point(244, 300);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(278, 54);
             btnlogin.TabIndex = 5;
@@ -91,7 +92,7 @@
             // 
             lblParking.AutoSize = true;
             lblParking.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblParking.Location = new Point(271, 117);
+            lblParking.Location = new Point(315, 101);
             lblParking.Name = "lblParking";
             lblParking.Size = new Size(152, 28);
             lblParking.TabIndex = 6;
@@ -100,7 +101,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(240, 25);
+            pictureBox1.Location = new Point(284, 9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(216, 89);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -111,7 +112,7 @@
             // 
             chkShowPassword.AutoSize = true;
             chkShowPassword.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chkShowPassword.Location = new Point(332, 264);
+            chkShowPassword.Location = new Point(376, 248);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(136, 24);
             chkShowPassword.TabIndex = 8;

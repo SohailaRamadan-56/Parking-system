@@ -33,21 +33,21 @@
             lblOwner = new Label();
             lblPhone = new Label();
             lblType = new Label();
-            textBox1 = new TextBox();
+            txtSearch = new TextBox();
             txtPlate = new TextBox();
             txtOwner = new TextBox();
             txtPhone = new TextBox();
-            textBox5 = new TextBox();
             btnAdd = new Button();
             btnClear = new Button();
             btnDelete = new Button();
             btnUpdate = new Button();
-            cmbFilter = new ComboBox();
+            cmdFilter = new ComboBox();
             dgv = new DataGridView();
             colPlate = new DataGridViewTextBoxColumn();
             colOwner = new DataGridViewTextBoxColumn();
             colPhone = new DataGridViewTextBoxColumn();
             colType = new DataGridViewTextBoxColumn();
+            cmdType = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
             SuspendLayout();
             // 
@@ -100,12 +100,12 @@
             lblType.TabIndex = 4;
             lblType.Text = "Type";
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.Location = new Point(79, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 5;
+            txtSearch.Location = new Point(79, 15);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(125, 27);
+            txtSearch.TabIndex = 5;
             // 
             // txtPlate
             // 
@@ -127,13 +127,6 @@
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(125, 27);
             txtPhone.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(663, 241);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 9;
             // 
             // btnAdd
             // 
@@ -175,19 +168,19 @@
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // cmbFilter
+            // cmdFilter
             // 
-            cmbFilter.FormattingEnabled = true;
-            cmbFilter.Location = new Point(232, 15);
-            cmbFilter.Name = "cmbFilter";
-            cmbFilter.Size = new Size(151, 28);
-            cmbFilter.TabIndex = 14;
+            cmdFilter.FormattingEnabled = true;
+            cmdFilter.Location = new Point(321, 12);
+            cmdFilter.Name = "cmdFilter";
+            cmdFilter.Size = new Size(125, 28);
+            cmdFilter.TabIndex = 14;
             // 
             // dgv
             // 
             dgv.AllowUserToAddRows = false;
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgv.BackgroundColor = SystemColors.ButtonFace;
+            dgv.BackgroundColor = Color.WhiteSmoke;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv.Columns.AddRange(new DataGridViewColumn[] { colPlate, colOwner, colPhone, colType });
             dgv.Location = new Point(12, 66);
@@ -225,22 +218,31 @@
             colType.Name = "colType";
             colType.ReadOnly = true;
             // 
+            // cmdType
+            // 
+            cmdType.FormattingEnabled = true;
+            cmdType.Items.AddRange(new object[] { "Car", "Motorbike", "Truck" });
+            cmdType.Location = new Point(663, 248);
+            cmdType.Name = "cmdType";
+            cmdType.Size = new Size(125, 28);
+            cmdType.TabIndex = 16;
+            // 
             // VehiclesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(831, 450);
+            Controls.Add(cmdType);
             Controls.Add(dgv);
-            Controls.Add(cmbFilter);
+            Controls.Add(cmdFilter);
             Controls.Add(btnUpdate);
             Controls.Add(btnDelete);
             Controls.Add(btnClear);
             Controls.Add(btnAdd);
-            Controls.Add(textBox5);
             Controls.Add(txtPhone);
             Controls.Add(txtOwner);
             Controls.Add(txtPlate);
-            Controls.Add(textBox1);
+            Controls.Add(txtSearch);
             Controls.Add(lblType);
             Controls.Add(lblPhone);
             Controls.Add(lblOwner);
@@ -260,20 +262,21 @@
         private Label lblOwner;
         private Label lblPhone;
         private Label lblType;
-        private TextBox textBox1;
+        private TextBox txtSearch;
         private TextBox txtPlate;
         private TextBox txtOwner;
         private TextBox txtPhone;
-        private TextBox textBox5;
+        private TextBox txtType;
         private Button btnAdd;
         private Button btnClear;
         private Button btnDelete;
         private Button btnUpdate;
-        private ComboBox cmbFilter;
+        private ComboBox cmdFilter;
         private DataGridView dgv;
         private DataGridViewTextBoxColumn colPlate;
         private DataGridViewTextBoxColumn colOwner;
         private DataGridViewTextBoxColumn colPhone;
         private DataGridViewTextBoxColumn colType;
+        private ComboBox cmdType;
     }
 }

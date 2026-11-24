@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             grpEntry = new GroupBox();
-            grpExit = new GroupBox();
-            lblVehicle = new Label();
-            lblSlot = new Label();
-            lblRate = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            btnEntry = new Button();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
-            btnEntry = new Button();
+            lblVehicle = new Label();
+            lblSlot = new Label();
+            grpExit = new GroupBox();
             btnExit = new Button();
+            lblRate = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             dgv = new DataGridView();
             colTicket = new DataGridViewTextBoxColumn();
             colPlate = new DataGridViewTextBoxColumn();
@@ -64,16 +64,30 @@
             grpEntry.TabStop = false;
             grpEntry.Text = "Entry";
             // 
-            // grpExit
+            // btnEntry
             // 
-            grpExit.Controls.Add(btnExit);
-            grpExit.Controls.Add(lblRate);
-            grpExit.Location = new Point(0, 114);
-            grpExit.Name = "grpExit";
-            grpExit.Size = new Size(879, 105);
-            grpExit.TabIndex = 1;
-            grpExit.TabStop = false;
-            grpExit.Text = "Exit";
+            btnEntry.Location = new Point(462, 35);
+            btnEntry.Name = "btnEntry";
+            btnEntry.Size = new Size(142, 29);
+            btnEntry.TabIndex = 4;
+            btnEntry.Text = "Register entry";
+            btnEntry.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(73, 39);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 4;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(285, 39);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(151, 28);
+            comboBox2.TabIndex = 5;
             // 
             // lblVehicle
             // 
@@ -92,41 +106,17 @@
             lblSlot.Size = new Size(35, 20);
             lblSlot.TabIndex = 2;
             lblSlot.Text = "Slot";
-           
             // 
-            // lblRate
+            // grpExit
             // 
-            lblRate.AutoSize = true;
-            lblRate.Location = new Point(295, 60);
-            lblRate.Name = "lblRate";
-            lblRate.Size = new Size(39, 20);
-            lblRate.TabIndex = 3;
-            lblRate.Text = "Rate";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(73, 39);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 4;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(285, 39);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 28);
-            comboBox2.TabIndex = 5;
-            // 
-            // btnEntry
-            // 
-            btnEntry.Location = new Point(462, 35);
-            btnEntry.Name = "btnEntry";
-            btnEntry.Size = new Size(142, 29);
-            btnEntry.TabIndex = 4;
-            btnEntry.Text = "Register entry";
-            btnEntry.UseVisualStyleBackColor = true;
+            grpExit.Controls.Add(btnExit);
+            grpExit.Controls.Add(lblRate);
+            grpExit.Location = new Point(0, 114);
+            grpExit.Name = "grpExit";
+            grpExit.Size = new Size(879, 105);
+            grpExit.TabIndex = 1;
+            grpExit.TabStop = false;
+            grpExit.Text = "Exit";
             // 
             // btnExit
             // 
@@ -136,6 +126,16 @@
             btnExit.TabIndex = 4;
             btnExit.Text = "process exit for selected ticket";
             btnExit.UseVisualStyleBackColor = true;
+            // 
+            // lblRate
+            // 
+            lblRate.AutoSize = true;
+            lblRate.Location = new Point(285, 60);
+            lblRate.Name = "lblRate";
+            lblRate.Size = new Size(65, 20);
+            lblRate.TabIndex = 3;
+            lblRate.Text = "Rate=50";
+            
             // 
             // dgv
             // 

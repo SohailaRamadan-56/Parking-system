@@ -34,10 +34,10 @@
             lblfree = new Label();
             toolStrip1 = new ToolStrip();
             meunVehicles = new ToolStripLabel();
-            menuSlots = new ToolStripLabel();
             menuEntry = new ToolStripLabel();
             menuTickets = new ToolStripLabel();
             menuReports = new ToolStripLabel();
+            menuSlots = new ToolStripLabel();
             menuExit = new ToolStripLabel();
             lblRevenue = new Label();
             panel2 = new Panel();
@@ -97,7 +97,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { meunVehicles, menuSlots, menuEntry, menuTickets, menuReports, menuExit });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { meunVehicles, menuEntry, menuTickets, menuReports, menuSlots, menuExit });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(1264, 28);
@@ -110,13 +110,7 @@
             meunVehicles.Name = "meunVehicles";
             meunVehicles.Size = new Size(79, 25);
             meunVehicles.Text = "Vehicles";
-            // 
-            // menuSlots
-            // 
-            menuSlots.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuSlots.Name = "menuSlots";
-            menuSlots.Size = new Size(53, 25);
-            menuSlots.Text = "Slots";
+            meunVehicles.Click += meunVehicles_Click;
             // 
             // menuEntry
             // 
@@ -139,12 +133,20 @@
             menuReports.Size = new Size(78, 25);
             menuReports.Text = "Reports";
             // 
+            // menuSlots
+            // 
+            menuSlots.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuSlots.Name = "menuSlots";
+            menuSlots.Size = new Size(53, 25);
+            menuSlots.Text = "Slots";
+            // 
             // menuExit
             // 
             menuExit.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuExit.Name = "menuExit";
             menuExit.Size = new Size(42, 25);
             menuExit.Text = "Exit";
+            menuExit.Click += toolStripLabel1_Click;
             // 
             // lblRevenue
             // 
@@ -250,6 +252,7 @@
             Controls.Add(label1);
             Name = "mainForm";
             Text = "Parking management system";
+            Load += mainForm_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -271,12 +274,10 @@
         private Label lblOccupied;
         private Label lblfree;
         private ToolStrip toolStrip1;
-        private ToolStripLabel meunVehicles;
-        private ToolStripLabel menuSlots;
         private ToolStripLabel menuEntry;
         private ToolStripLabel menuTickets;
         private ToolStripLabel menuReports;
-        private ToolStripLabel menuExit;
+        private ToolStripLabel menuSlots;
         private Label lblRevenue;
         private Panel panel2;
         private Panel panel3;
@@ -286,5 +287,7 @@
         private Label lblNumOccupied;
         private Label lblNumRevenue;
         private Label lblNumFree;
+        private ToolStripLabel meunVehicles;
+        private ToolStripLabel menuExit;
     }
 }
