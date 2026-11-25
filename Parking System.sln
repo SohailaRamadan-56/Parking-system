@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking System", "Parking System\Parking System.csproj", "{33B546B5-A8FC-408E-8D36-AD1059989AEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking System", "Parking System.csproj", "{33B546B5-A8FC-408E-8D36-AD1059989AEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
